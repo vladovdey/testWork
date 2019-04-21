@@ -1,0 +1,74 @@
+@import "libs"
+
+$green: #43cb83
+$black: #282828
+$gray: #e3e3e3
+
+body
+    font-family: Lato, sans-serif
+    color: #fff
+
+.header
+    background: url("../img/header-bg.jpg") no-repeat
+    background-size: cover
+    &_menu
+        & .items
+            margin: 50px 0px 100px 0px 
+            a
+                color: #fff
+                text-decoration: none
+                text-transform: uppercase
+                padding: 20px 30px
+            a:hover
+                border-radius: 25px
+                background-color: #fff
+                color: $green
+                font-weight: 600
+    &_info
+        h1
+            text-transform: uppercase
+        h2
+            margin: 55px 0px 35px 0px
+        p
+            margin-bottom: 155px
+//end of header style
+
+.goods
+    color: $black
+    padding: 75px 0px 65px
+    &-question
+        text-align: center
+    &-block
+        &_item
+            padding-top: 20px
+            padding-bottom: 30px
+            border: 1px solid $gray
+            p, h1
+                text-align: center
+            &__title
+                text-transform: uppercase
+
+            &__price
+                color: #515461
+                font-size: 32px
+                font-weight: 900
+
+            input[type=submit]
+                background-color: #fff
+                border: 3px solid $green
+                border-radius: 20px
+                color:#828282
+                font-weight: 600
+                font-size: 20px
+                padding: 0px 50px
+                &:hover
+                    transition: 0.4s
+                    background-color: $green
+                    color: $black
+//end goods style\\
+
+.form-request
+    background: url("../img/form-bg.jpg") no-repeat
+    background-size: cover
+    height: 200px
+                
