@@ -30,33 +30,80 @@ input[type=submit]
     background-size: cover
     position: relative
     font-family: $latoblack
-    .menu-btn 
-        display: block
-        width: 50px
-        height: 50px
-        background-color: #fff
-        border-radius: 50%
-        position: relative
+    .hamburgermenu
+        display: none
+        margin: 20px 0px 30px 0px
+        &-item
+            margin: 10px 0px
+            display: none
+            text-align: center
+            .menu-elements
+                font-weight: 500
+                font-size: 21px
+        &-btn
+            display: block
+            position: relative
+            border-radius: 50%
+            height: 50px
+            width: 50px
+            background-color: #fff
+            cursor: pointer
+            span
+                position: absolute
+                top: 50%
+                left: 30%
+                width: 20px
+                height: 2px
+                background-color: black
+                transition: 0.5s
+                &::before,
+                &::after
+                    position: absolute
+                    width: 20px
+                    height: 2px
+                    background-color: black
+                    content: ''
+                &::before
+                    transform: translateY(-5px) rotateZ(0deg)
+                    transition: 1s
+                    // transform: rotateZ(45deg) scaleX(1.4) 
+                &::after
+                    transform: translateY(5px) rotateZ(0deg)
+                    transition: 1s
+                    // transform: rotateZ(-45deg) scaleX(1.4)
+
+    .closed
+        span
+            background-color: transparent
+            &::before
+                // transform: translateY(-5px)
+                transform: rotateZ(45deg) scaleX(1.4)
+                transition: 0.5s
+            &::after
+                // transform: translateY(5px)
+                transform: rotateZ(-45deg) scaleX(1.4)
+                transition: 0.5s
+    .menu-elements
+        color: #fff
+        text-decoration: none
+        text-transform: uppercase
+        padding: 20px 30px
+        border-radius: 25px
+
     &-becon
         position: absolute
         z-index: 9
         top: 100px
-        img
-            width: 80%
+
     &_menu
-        & .items
-            margin: 45px 0px 100px 0px 
-            a
-                color: #fff
-                text-decoration: none
-                text-transform: uppercase
-                padding: 20px 30px
-                border-radius: 25px
-            a:hover
+        .desktop-menu
+            margin: 45px 0px 100px 0px
+            .menu-elements:hover
                 transition: 0.8s
                 background-color: #fff
                 color: $green
-                font-weight: 600
+                font-weight: 600 
+            
                 
     &_info
         // text-align: center
@@ -260,12 +307,18 @@ input[type=submit]
             font-size: 20px 
 
 @media screen and (max-width: 12000px)
+    .header
+        .hamburgermenu
+            display: none
+
     .goods-block_item:hover
         transform: scale(1.1)
         transition: 0.8s
         box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.41)
+
     .footer-hand
         display: block
+
     .form-request_areaform__item input
         width: 650px
 
@@ -285,8 +338,21 @@ input[type=submit]
         display: none
 
 @media screen and (max-width: 768px)
-    .header_menu .items
-        display: none
+    .header
+        .hamburgermenu
+            display: block
+        .desktop-menu 
+            display: none
+        &_info__about-discount 
+            padding-left: 0px
+            text-align: center
+            h1
+                margin-top: 50px
+            p
+                margin-right: 0px
+                margin-bottom: 40px
+            h2
+                margin: 20px 0px 
     .goods-block_item__description
         height: 150px
 

@@ -1,3 +1,14 @@
+$(".hamburgermenu-btn").on("click",function(){
+	if($(this).hasClass( "closed")){
+	  $(".hamburgermenu-item").hide("slow");
+	  $(this).removeClass("closed");
+	}else{
+	  $(this).addClass("closed");
+	  $(".hamburgermenu-item").show("slow");
+	  }
+   
+  });
+
 $(".add").on("click", function () { 
 	$('.counter').val( function(i, oldval) {
 		return ++oldval;

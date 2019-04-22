@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "loto-regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/LatoRegular/LatoRegular.eot");
+  src: url("../fonts/LatoRegular/LatoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoRegular/LatoRegular.woff") format("woff"), url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "loto-bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/LatoBold/LatoBold.eot");
+  src: url("../fonts/LatoBold/LatoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoBold/LatoBold.woff") format("woff"), url("../fonts/LatoBold/LatoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "lato-black";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/LatoBlack/LatoBlack.eot");
+  src: url("../fonts/LatoBlack/LatoBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoBlack/LatoBlack.woff") format("woff"), url("../fonts/LatoBlack/LatoBlack.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "myrad";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MyriadProBold/MyriadProBold.eot");
+  src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"), url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype"); }
