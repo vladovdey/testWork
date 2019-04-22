@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/main.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Test</title>
 </head>
 <body>
     <header class="header">
+        <div class="header-becon">
+            <img src="./img/header-becon.png" alt="">
+        </div>
         <div class="container-fluid">
             <div class="row header_menu">
-                <div class="col-6">
-
+                <div class="col-12 burgermenu" style="display:none">
+                        <a href="#" class="menu-btn">
+                            <span></span>
+                        </a>
                 </div>
-                <div class="col-6 items">
+                
+                <div class="col-0 col-md-6"></div>
+                <div class="col-12 col-lg-6 items">
                     <a href="">home</a>
                     <a href="">order services</a>
                     <a href="">beacon marketing</a>
@@ -22,8 +30,8 @@
             </div>
 
             <div class="row header_info">
-                <div class="col-6"></div>
-                <div class="col-6 about-discount">
+                <div class="col-0 col-md-6"></div>
+                <div class="col-12 col-lg-6 header_info__about-discount">
                     <h1>Discount for Services</h1>
                     <h2>Our advertisement services cost $10 per beacon per month, and we offer wholesale discounts:</h2>
                     <p>Free installation of the beacons is also an option, but then their marketing capabilities will be used by third parties also. How to Get Connected To get connected to our service or find out more information, please call us at (844)-295-0900 or purchase our service through our site at https://fdh.cloud/order/services</p>
@@ -33,7 +41,7 @@
     </header>
     
     <section class="goods">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row goods-question">
                 <div class="col-12">
                     <h1>Choose beacons and fill in the order form?</h1>
@@ -41,102 +49,205 @@
             </div>
             
             <div class="row goods-block">
-                <div class="col-3 goods-block_item">
-                    <h1 class="goods-block_item__title">asensor</h1>
-                    <div class="goods-block_item__example">
-                        <img src="./img/product1.png" alt="product1">
+                <div class="col-12 col-lg-3">
+                    <div class="goods-block_item">
+                            <p class="goods-block_item__title">asensor</p>
+                            <div class="goods-block_item__example">
+                                <img src="./img/product1.png" alt="product1">
+                            </div>
+        
+                            <p class="goods-block_item__price">$15</p>
+        
+                            <p class="goods-block_item__description">
+                                    ASensor is a BLE beacon with multiple advertising data formats. The BLE is a very low power 2.4G radio that can transmit the beacon information efficiently. The typical beacon battery life is 1.5 year in default settings 3-Axis, 12-bit accelerometer magna aliqua.
+                            </p>
+
+                            <div class="first goods-block_item__inputs___count">
+                                <span class="del">-</span>
+                                <input type="text" name="counter" class="counter" value="0">
+                                <span class="add">+</span>
+                            </div>
+                            
+
+                            <div class="goods-block_item__inputs___submit">
+                                <input type="submit" value="BUY NOW">
+                            </div>
                     </div>
-
-                    <p class="goods-block_item__price">$15</p>
-
-                    <p class="goods-block_item__description">
-                            ASensor is a BLE beacon with multiple advertising data formats. The BLE is a very low power 2.4G radio that can transmit the beacon information efficiently. The typical beacon battery life is 1.5 year in default settings 3-Axis, 12-bit accelerometer magna aliqua.
-                    </p>
-
-                    <input type="number" name="" id="">
-                    <input type="submit" value="BUY NOW">
                 </div>
 
-                <div class="col-3 goods-block_item">
-                        <h1 class="goods-block_item__title">ARM Cortex - M0</h1>
-                        <div class="goods-block_item__example">
-                            <img src="./img/product2.png" alt="product1">
-                        </div>
+                <div class="col-12 col-lg-3">
+                    <div class="goods-block_item"> 
+                            <p class="goods-block_item__title">ARM Cortex - M0</p>
+                            <div class="goods-block_item__example">
+                                <img src="./img/product2.png" alt="product1">
+                            </div>
+        
+                            <p class="goods-block_item__price">$13</p>
+        
+                            <p class="goods-block_item__description">
+                                    ARM Cortex - M0 32-bit processor
+                                    Dialog solution, long battery life 
+                                    Support Bluetooth Smart 4.0 
+                                    Builtin 1 x CR2450 battery holder Temperature sensor for environment monitoring Configurable by App AprilBeacon
+                            </p>
+        
+                            <div class="goods-block_item__inputs___count">
+                                    <span class="del">-</span>
+                                    <input type="text" name="counter" class="counter" value="0">
+                                    <span class="add">+</span>
+                                </div>
+                                
     
-                        <p class="goods-block_item__price">$13</p>
-    
-                        <p class="goods-block_item__description">
-                                ARM Cortex - M0 32-bit processor
-                                Dialog solution, long battery life 
-                                Support Bluetooth Smart 4.0 
-                                Builtin 1 x CR2450 battery holder Temperature sensor for environment monitoring Configurable by App AprilBeacon
-                        </p>
-    
-                        <input type="number" name="" id="">
-                        <input type="submit" value="BUY NOW">
+                                <div class="goods-block_item__inputs___submit">
+                                    <input type="submit" value="BUY NOW">
+                                </div>
+                    </div>  
                 </div>
 
-                <div class="col-3 goods-block_item">
-                        <h1 class="goods-block_item__title">Estimote Proximity
-                                Beacons </h1>
-                        <div class="goods-block_item__example">
-                            <img src="./img/product3.png" alt="product1">
-                        </div>
+                <div class="col-12 col-lg-3">
+                    <div class="goods-block_item"> 
+                            <p class="goods-block_item__title">Estimote Proximity
+                                    Beacons </p>
+                            <div class="goods-block_item__example">
+                                <img src="./img/product3.png" alt="product1">
+                            </div>
+        
+                            <p class="goods-block_item__price">$25</p>
+        
+                            <p class="goods-block_item__description">
+                                    Estimote Proximity Beacons 
+                                    lifetime: 2 years 
+                                    range: up to 70 m 
+                                    packets: iBeacon™ or Eddystone™ 
+                                    features: motion & temperature sensor, NFC
+                            </p> 
+
+                            
+                            <div class="goods-block_item__inputs___count">
+                                    <span class="del">-</span>
+                                    <input type="text" name="counter" class="counter" value="0">
+                                    <span class="add">+</span>
+                                </div>
+                                
     
-                        <p class="goods-block_item__price">$25</p>
-    
-                        <p class="goods-block_item__description">
-                                Estimote Proximity Beacons 
-                                lifetime: 2 years 
-                                range: up to 70 m 
-                                packets: iBeacon™ or Eddystone™ 
-                                features: motion & temperature sensor, NFC
-                        </p>    
+                                <div class="goods-block_item__inputs___submit">
+                                    <input type="submit" value="BUY NOW">
+                                </div>
+                            
+                    </div>
                         
-                        <input type="number" name="" id="">
-                        <input type="submit" value="BUY NOW">
                 </div>
 
-                <div class="col-3 goods-block_item">
-                        <h1 class="goods-block_item__title">Aprilbeacon 227L
-                                (150M Range) </h1>
-                        <div class="goods-block_item__example">
-                            <img src="./img/product4.png" alt="product1">
+                <div class="col-12 col-lg-3">
+                        <div class="goods-block_item"> 
+                                <p class="goods-block_item__title">Aprilbeacon 227L
+                                        (150M Range) </p>
+                                <div class="goods-block_item__example">
+                                    <img src="./img/product4.png" alt="product1">
+                                </div>
+            
+                                <p class="goods-block_item__price">$30</p>
+            
+                                <p class="goods-block_item__description">
+                                    Aprilbeacon 227L (150M Range) 
+                                    iBeacon size: 66mm*36mm*22mm 
+                                    Default frequency: 900ms 
+                                    Setting frequency: 100ms or more 
+                                    System: IOS 7.0, Android 4.3 
+                                    Color: green iBeacon + white case
+                                </p>
+            
+                                <div class="first goods-block_item__inputs___count">
+                                        <span class="del">-</span>
+                                        <input type="text" name="counter" class="counter" value="0">
+                                        <span class="add">+</span>
+                                    </div>
+                                
+    
+                                <div class="goods-block_item__inputs___submit">
+                                    <input type="submit" value="BUY NOW">
+                                </div>
                         </div>
-    
-                        <p class="goods-block_item__price">$30</p>
-    
-                        <p class="goods-block_item__description">
-                                Estimote Proximity Beacons 
-                                lifetime: 2 years 
-                                range: up to 70 m 
-                                packets: iBeacon™ or Eddystone™ 
-                                features: motion & temperature sensor, NFC
-                        </p>
-    
-                        <input type="number" name="" id="">
-                        <input type="submit" value="BUY NOW">
                 </div>
             </div>
         </div>
     </section>
 
     <section class="form-request">
+            <!-- <div class="beconform">
+                    <img src="./img/beconform.png" alt="">
+                </div> -->
         <div class="container-fluid">
-            <div class="row">
+            
+            <div class="row form-request_text__header justify-content-center">
+                <div class="col-12 form-request_text__header___text">
+                        <h1>A couple of steps to make your store popular</h1>
+                </div>
+            </div>    
+                <div class="row form-request_text__buttons justify-content-center">
+                    <div class="form-request_text__buttons___steps change" id="first_step">Step 1</div>
+                    <div class="form-request_text__buttons___steps" id="sec_step">Step 2</div>
+                    <div class="form-request_text__buttons___steps" id="third_step">Step 3</div>
+                </div>
 
-            </div>
+                <div class="row form-request_text__info justify-content-center">
+                    <div class="col-9">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        </p>
+                    </div> 
+                </div>
+            
 
-            <div class="row">
-
+            <div class="row form-request_areaform">
+                <div class="col-md-12">
+                        <form action="" method="GET" id="main-form">
+                            <div class="form-request_areaform__item"><input type="text" name="first_name" id="first_name" placeholder="Enter First Name"></div>
+                            <div class="form-request_areaform__item"><input type="text" name="second_name" id="second_name" placeholder="Enter Last Name"></div>
+                            <div class="form-request_areaform__item"><input type="email" name="email" id="email" placeholder="Enter E-mail"></div>
+                            <div class="form-request_areaform__item"><input type="submit" id="form_next-btn" value="Next"></div>
+                                
+                            </form>
+                </div>
+                
             </div>
         </div>
     </section>
 
-    <footer>
+    <footer class="footer">
+        <div class="footer-hand">
+            <img src="./img/footer-hand.png" alt="">
+        </div>
+        <div class="container-fluid">
+            <div class="row footer-support justify-content-center">
+                <div class="col-12 footer-support_phone"> <p>SUPPORT: <span>(844) 295-0900</span></p></div> 
+                <div class="footer-support_mail"><a href="mailto:support@frontdeskhelpers.com">support@frontdeskhelpers.com</a></div>   
+            </div>
 
+            <div class="row footer-socials justify-content-center">
+                    <a class="footer-socials-fb" href=""><i class="fa fa-facebook"></i></a>
+                
+                    <a class="footer-socials-gplus" href=""><i class="fa fa-youtube"></i></a>
+                
+                    <a class="footer-socials-youtube" href=""><i class="fa fa-google-plus"></i></a>
+                
+                    <a class="footer-socials-linked" href=""><i class="fa fa-linkedin"></i></a>
+                
+            </div>
+
+            <div class="row footer-policy justify-content-center"> 
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Service</a>
+                <a href="">Terms of Sales</a>
+                
+            </div>
+
+            <div class="row justify-content-center">
+                <p>© 2017 FDH Cloud</p>
+            </div>
+        </div>
     </footer>
-
-    <script src="../app/js/script.min.js"></script>
+    
+    <script src="./js/script.min.js"></script>
 </body>
 </html>

@@ -1,74 +1,312 @@
 @import "libs"
+@import "variables"
 
-$green: #43cb83
-$black: #282828
-$gray: #e3e3e3
+
 
 body
-    font-family: Lato, sans-serif
+    font-family: $lato
     color: #fff
+
+// h1,h2,h3
+//     font-family: $latoblack
+
+input[type=submit]
+    background-color: #fff
+    border: 3px solid $green
+    border-radius: 20px
+    color:#828282
+    font-weight: 600
+    font-size: 20px
+    padding: 0px 50px
+    text-transform: uppercase
+    &:hover
+        transition: 0.4s
+        background-color: $green
+        color: $black
+
 
 .header
     background: url("../img/header-bg.jpg") no-repeat
     background-size: cover
+    position: relative
+    font-family: $latoblack
+    .menu-btn 
+        display: block
+        width: 50px
+        height: 50px
+        background-color: #fff
+        border-radius: 50%
+        position: relative
+    &-becon
+        position: absolute
+        z-index: 9
+        top: 100px
+        img
+            width: 80%
     &_menu
         & .items
-            margin: 50px 0px 100px 0px 
+            margin: 45px 0px 100px 0px 
             a
                 color: #fff
                 text-decoration: none
                 text-transform: uppercase
                 padding: 20px 30px
-            a:hover
                 border-radius: 25px
+            a:hover
+                transition: 0.8s
                 background-color: #fff
                 color: $green
                 font-weight: 600
+                
     &_info
-        h1
-            text-transform: uppercase
-        h2
-            margin: 55px 0px 35px 0px
-        p
-            margin-bottom: 155px
+        // text-align: center
+        &__about-discount
+            padding-left: 80px
+            h1
+                text-transform: uppercase
+            h2
+                font-family: $bold
+                margin: 50px 80px 30px 0px
+            p
+                font-family: $lato
+                font-size: 18px
+                margin-right: 50px
+                margin-bottom: 155px
 //end of header style
 
 .goods
     color: $black
     padding: 75px 0px 65px
+    position: relative
+    z-index: 0
     &-question
         text-align: center
+        font-family: $bold
+        font-size: 22px
+        h1
+            margin-bottom: 60px
     &-block
+        font-family: $lato
+        
+        .col-3
+            padding-left: 5px
+            padding-right: 5px
         &_item
             padding-top: 20px
             padding-bottom: 30px
             border: 1px solid $gray
-            p, h1
+            
+            p
                 text-align: center
             &__title
+                height: 60px
                 text-transform: uppercase
-
+                font-size: 20px
+            &__example
+                height: 160px
+                width: 160px
+                margin: 0 auto
+                img
+                    height: 150px
+                    width: 160px
             &__price
                 color: #515461
                 font-size: 32px
                 font-weight: 900
+            &__description
+                height: 190px
+                padding: 0 22px
+                font-family: $lato
+                font-size: 14px
+            &__inputs
+                &___count
+                    width: fit-content
+                    margin: 0 auto
+                    border: 1px solid $gray
+                    border-radius: 20px
+                    padding: 0px 20px
+                    margin-bottom: 20px
+                    input
+                        border: none
+                        width: 30px
+                        text-align: center
+                        font-weight: 500
+                        font-size: 16px
+                        outline: none 
+                    span
+                        display: inline-block
+                        font-weight: bold
+                        cursor: pointer
+                        font-size: 18px
+                        width: 8px
+                        font-family: $myrad
+                &___submit
+                    width: 205px
+                    margin: 0 auto
+            
 
-            input[type=submit]
-                background-color: #fff
-                border: 3px solid $green
-                border-radius: 20px
-                color:#828282
-                font-weight: 600
-                font-size: 20px
-                padding: 0px 50px
-                &:hover
-                    transition: 0.4s
-                    background-color: $green
-                    color: $black
 //end goods style\\
 
 .form-request
     background: url("../img/form-bg.jpg") no-repeat
     background-size: cover
-    height: 200px
-                
+    padding: 50px 0px 45px
+    color: #171717
+    font-family: $bold
+    &_text
+        &__header
+            font-size: 20px
+            &___text
+                text-align: center
+        &__buttons
+            font-family: $latoblack
+            font-size: 22px
+            font-weight: 600
+            text-transform: uppercase
+            margin: 30px 0px
+            &___steps
+                margin: 0 10px
+                padding: 0px 20px
+                border-radius: 25px
+                cursor: pointer
+            .change
+                box-shadow: 0 15px 30px #709f90
+                background-color: #fff
+        &__info
+            font-size: 20px
+            font-weight: bold
+            line-height: 1
+    &_areaform
+        &__item
+            width: fit-content
+            margin: 0 auto
+        input[type=text],[type=email]
+            height: 50px
+            // width: 650px
+            outline: none
+            background-color: #e0e6eb
+            border-radius: 20px
+            border: 3px solid #fff
+            margin: 10px 0px
+            padding-left: 35px                    
+            &::placeholder
+                font-family: $latoblack
+                color: $black
+                font-weight: bold
+                font-size: 20px
+            &:focus
+                &::placeholder
+                    color: transparent
+                    transition: 0.2s
+        input[type=submit]
+            border: #fff
+            color: $green
+            height: 55px
+            width: 210px
+            margin-top: 20px
+            border-radius: 30px
+            font-size: 25px
+            outline: none 
+            &:hover
+                border: $green
+                color: #fff
+//end form section style\\
+
+.footer
+    background: url("../img/footer-bg.jpg") no-repeat
+    background-size: cover
+    border-top: 1px solid #5bd39f
+    padding-top: 45px
+    position: relative
+    a 
+        color: #fff
+    &-hand
+        width: 45%
+        position: absolute
+        z-index: 999
+        bottom: 0
+        left: -100px
+        img
+            width: 83%
+    &-support
+        text-align: center
+        font-family: $lato
+        font-size: 24px
+        font-weight: 100
+        margin-bottom: 25px
+        &_mail
+            font-size: 22px
+        p
+            text-transform: uppercase
+            margin: 0px
+    &-socials
+        a
+            height: 60px
+            width: 60px
+            border: 1px solid #fff
+            border-radius: 100%
+            color: #fff
+            text-align: center
+            margin: 0px 20px 35px 
+            &:hover
+                background-color: #fff
+                color: $green
+            i
+                font-size: 24px
+                padding: 15px
+    &-policy
+        a
+            margin: 0px 20px 30px
+            font-size: 20px 
+
+@media screen and (max-width: 12000px)
+    .goods-block_item:hover
+        transform: scale(1.1)
+        transition: 0.8s
+        box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.41)
+    .footer-hand
+        display: block
+    .form-request_areaform__item input
+        width: 650px
+
+@media screen and (max-width: 992px)
+    .header
+        &-becon
+            display: none
+    .goods
+        padding: 0px
+        &-block_item
+            margin-bottom: 20px
+            &:hover
+                transform: none
+            &__description
+                height: 100px
+    .footer-hand
+        display: none
+
+@media screen and (max-width: 768px)
+    .header_menu .items
+        display: none
+    .goods-block_item__description
+        height: 150px
+
+@media screen and (max-width: 672px)
+    .form-request_areaform__item input
+        width: 300px
+
+@media screen and (max-width: 360px)
+    .header_info__about-discount
+        text-align: center
+        padding: 0
+        h1,h2,p
+            margin: 0px 0px 10px 0px
+    .form-request_areaform__item input
+        width: 180px
+        
+    .goods
+        &-question
+            margin: 20px 0px
+            h1
+                margin: 0px
+        &-block_item__description
+            height: 200px
