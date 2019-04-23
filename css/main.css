@@ -3402,6 +3402,13 @@ input[type=submit] {
     background-color: #43cb83;
     color: #282828; }
 
+.beconform {
+  position: absolute;
+  right: 0; }
+  .beconform img {
+    width: 100%;
+    padding: 28px 0px 0px 0px; }
+
 .header {
   background: url("../img/header-bg.jpg") no-repeat;
   background-size: cover;
@@ -3472,6 +3479,8 @@ input[type=submit] {
     position: absolute;
     z-index: 9;
     top: 100px; }
+    .header-becon img {
+      width: 90%; }
   .header_menu .desktop-menu {
     margin: 45px 0px 100px 0px; }
     .header_menu .desktop-menu .menu-elements:hover {
@@ -3563,7 +3572,7 @@ input[type=submit] {
         margin: 0 auto; }
 
 .form-request {
-  background: url("../img/form-bg.jpg") no-repeat;
+  background: url("../img/form-bg1.jpg") no-repeat;
   background-size: cover;
   padding: 50px 0px 45px;
   color: #171717;
@@ -3591,6 +3600,8 @@ input[type=submit] {
     font-size: 20px;
     font-weight: bold;
     line-height: 1; }
+    .form-request_text__info p {
+      padding: 10px 25px; }
   .form-request_areaform__item {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -3723,6 +3734,8 @@ input[type=submit] {
     width: 650px; } }
 
 @media screen and (max-width: 992px) {
+  .beconform {
+    display: none; }
   .header-becon {
     display: none; }
   .goods {
